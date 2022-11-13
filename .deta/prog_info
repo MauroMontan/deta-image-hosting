@@ -1,0 +1,1 @@
+{"id":"29b30303-c9fb-4bfc-a863-2a7bb7e9ded4","space":3466,"runtime":"python3.9","name":"image-uploader","path":"m6irvb","project":"e0eay195","account":"144798365827","region":"sa-east-1","deps":["fastapi","uvicorn","deta","python-multipart","python-dotenv"],"envs":["LOCALPORT","PROJECT_KEY","ROOT_FOLDER"],"public":true,"log_level":"debug","cron":""}
