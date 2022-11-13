@@ -3,3 +3,4 @@ uvicorn
 deta
 python-multipart
 python-dotenv
+jinja2

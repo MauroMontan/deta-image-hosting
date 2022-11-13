@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>Hello from static</h1>
+
+    <div id="app">
+      <form action="/images/upload" enctype="multipart/form-data" method="post">
+        <input name="file" type="file" />
+        <input type="submit" />
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
+
+    <script type="module">
+      const app = Vue.createApp({
+        /* root component options */
+      });
+
+      app.mount("#app");
+    </script>
+  </body>
+</html>
