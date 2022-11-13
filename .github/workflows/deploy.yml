@@ -3,7 +3,7 @@ on: [push]
 
 env:
   PROJECT_KEY: ${{secrets.PROJECT_KEY}}
-  ROOT_FOLDERNAME: root
+  ROOT_FOLDER: root
 
 jobs:
   deploy:
