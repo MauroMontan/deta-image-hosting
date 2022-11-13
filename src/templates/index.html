@@ -15,7 +15,7 @@
         enctype="multipart/form-data"
         method="post"
       >
-        <input id="file" name="file" type="file" onchange="getFileName()" />
+        <input id="file" name="file" type="file" />
         <label for="file">
           <button type="submit">
             <span class="material-symbols-outlined"> file_upload </span>
@@ -63,18 +63,18 @@
     </div>
 
     <script>
-      var file = document.getElementById("file").files[0];
+      var fileInput = document.getElementById("file");
       var form = document.getElementById("form");
 
-      const getFileName = () => {
+      fileInput.addEventListener("change", (event) => {
         const fileNameTag = document.createElement("span");
         fileNameTag.classList.add("filename");
-        const textnode = document.createTextNode(file.name);
+        const textnode = document.createTextNode(event.target.files[0].name);
 
         fileNameTag.appendChild(textnode);
 
         form.appendChild(fileNameTag);
-      };
+      });
     </script>
   </body>
 </html>
