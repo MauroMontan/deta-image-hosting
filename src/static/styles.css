@@ -9,6 +9,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 0.9rem;
+  color: black;
 }
 
 body {
@@ -29,14 +30,15 @@ body {
 }
 
 #app {
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   margin: auto;
   width: 35%;
   height: 50%;
   padding: 1rem;
-  box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 29px 0px;
   display: flex;
   flex-direction: column;
+  border: solid 1px #fafafa;
 }
 
 #app form {
@@ -83,12 +85,13 @@ button:hover {
 svg {
   object-fit: contain;
   object-position: center;
-  width: 50%;
-  height: 50%;
+  width: 45%;
+  height: 45%;
 }
 
 @media (max-width: 768px) {
   #app {
     width: 90%;
+    height: 60%;
   }
 }
