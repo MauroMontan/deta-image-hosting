@@ -14,7 +14,7 @@ app.include_router(images.router)
 
 @app.get("/users/{token}")
 async def users(token:str):
-    return Auth.currentUser(token)
+    return Auth().currentUser(token)
 
 @app.get("/", response_class=HTMLResponse)
 def render(r:Request):
