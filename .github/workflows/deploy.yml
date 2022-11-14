@@ -3,6 +3,7 @@ on: [push]
 
 env:
   PROJECT_KEY: ${{secrets.PROJECT_KEY}}
+  SECRET_KEY: ${{secrets.SECRET_KEY}}
   ROOT_FOLDER: root
 
 jobs:
@@ -21,6 +22,7 @@ jobs:
           # Create .env
           echo "PROJECT_KEY=${{ env.PROJECT_KEY }}" | tee -a .env > /dev/null
           echo "ROOT_FOLDER=${{ env.ROOT_FOLDER }}" | tee -a .env > /dev/null
+          echo "SECRET_KEY=${{ env.SECRET_KEY }}" | tee -a .env > /dev/null
           echo "BINARY_CONTENT_TYPES=image/*,font/*" | tee -a .env > /dev/null
 
           # Deploy environment variables
