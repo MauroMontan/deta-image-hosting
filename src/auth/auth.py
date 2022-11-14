@@ -5,9 +5,10 @@ from ..database.database import Database
 class Auth:
 
     def currentUser(self,token:str):
-        user = jwt.decode(token, key=Config.SECRET_KEY)
+        #user = jwt.decode(token, key=Config.SECRET_KEY)
+        return token
         
-        return user
+        #return user
         #return Database.users.fetch({"email":user["email"]}).last
 
 
