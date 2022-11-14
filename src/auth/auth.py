@@ -1,6 +1,6 @@
 import jwt
-from config.config import Config
-from database.database import Database
+from ..config.config import Config
+from ..database.database import Database
 
 class Auth:
     @staticmethod
